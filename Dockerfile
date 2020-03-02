@@ -27,6 +27,9 @@ RUN	mkdir /usr/local/nginx/html/hls
 
 
 ADD nginx.conf /usr/local/nginx/conf/
+ADD stat.xsl /usr/local/nginx/html/
+ADD crossdomain.xml /usr/local/nginx/html/
+ADD index.html /usr/local/nginx/html/
 ADD stunnel4 /etc/default/stunnel4
 ADD stunnel.conf /etc/stunnel/
 

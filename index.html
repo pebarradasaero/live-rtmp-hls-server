@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Live4You - Video for Tests</title>
+  <meta name="theme-color" content="#ffcc00">
+  <!-- Video.js base CSS -->
+  <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZJJFP4');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body style="margin: 0">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZJJFP4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<h3>Live4You.pt - Testes Player</h3>
+
+  <div style="display: flex; align-items: center; justify-content: center; width: 100vw; height: 100vh">
+<video-js id="my_video_1" class="video-js vjs-big-play-centered" width="720 px">
+    <source src="http://94.46.29.42/hls/teste.m3u8" type="application/x-mpegURL">
+  </video-js>
+  
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+  
+  <script>
+    var player = videojs('my_video_1',{
+	autoplay: 'true',
+	controls: true,
+	poster: 'https://www.aerography.pt/wp-content/uploads/2018/11/branco.png',
+	loop: false,
+	fluid: false,
+	liveui: true,
+	userActions: {
+		hotkeys: true
+	}
+	}
+
+);
+  </script>
+
+ </div>
+</body>
+</html>
+
+
