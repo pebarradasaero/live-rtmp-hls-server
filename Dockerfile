@@ -33,8 +33,9 @@ ADD index.html /usr/local/nginx/html/
 ADD stunnel4 /etc/default/stunnel4
 ADD stunnel.conf /etc/stunnel/
 
-
 EXPOSE 1935
 EXPOSE 80
+
+RUN service stunnel4 start
 
 CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
